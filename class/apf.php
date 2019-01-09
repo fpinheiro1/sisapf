@@ -78,7 +78,7 @@ class Apf
     }
   }
 
-  public function buscarApfBanco($numero, $ano)
+  public function selectApf($numero, $ano)
   {     
       //require "Banco.php";
     $banco = new Banco();
@@ -126,7 +126,7 @@ class Apf
   }
 
 
-  public function salvarApf()
+  public function insertApf()
   {
     session_start();
     $_SESSION["apf"] = array("numero" => $this->numero, "ano" => $this->ano);
