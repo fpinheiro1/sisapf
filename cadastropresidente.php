@@ -13,8 +13,8 @@
   </head>
   <body>
       <div class="container-fluid" >
-      <div class="row">
-      <h1 align=center>CADASTRO DO PRESIDENTE DA APF</h1>
+      <div style="display:flex;justify-content:center;align-items:center:" class="row">
+      <h1 >CADASTRO DO PRESIDENTE DA APF</h1>
       </div>
     <form action=exibir.php method=post>
 
@@ -26,7 +26,7 @@
 
           require "class/apf.php";
           $apf = new Apf();
-          $apf->buscarApfBanco($numapf, $anoapf);
+          $apf->selectApf($numapf, $anoapf);
           $idapf = $apf->getId();
           echo "<h1>$idapf</h1>"
    

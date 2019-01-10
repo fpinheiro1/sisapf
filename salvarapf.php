@@ -6,8 +6,8 @@ require "class/apf.php";
 $apf = new APF;
 
 $apf->criarApf($_POST['dia'], $_POST['mes'],$_POST['ano']);
-$apf->salvarApf();
-$apf->consultarBanco($apf->numero,$_POST['ano']);
+$apf->insertApf();
+$apf->consultarBanco($apf->getNumero(),$_POST['ano']);
 
 
 

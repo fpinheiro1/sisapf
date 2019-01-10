@@ -14,21 +14,22 @@
     
     <title>Menu APFD</title>
   </head>
-  <body>
+  <body style ="background-color:rgba(20,53,35)">
 
-      <div class="container-fluid" >
+      <div style ="background-color:rgba(105,105,236,0.2)" class="container-fluid" >
              <?php
-             session_start();
-             $num = $_SESSION["apf"]["numero"];
-             $ano = $_SESSION["apf"]["ano"];
-             $numapf = "$num / $ano";
-              echo "<h1>APF $numapf </h1>"?>
+            session_start();
+            $num = $_SESSION["apf"]["numero"];
+            $ano = $_SESSION["apf"]["ano"];
+            $numapf = "$num / $ano";
+            echo "<h1 style=display:flex;justify-content:center;align-items:center:>APF $numapf </h1>" ?>
 
         <!-- Cadastrar Envolvidos -->
              <div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Cadastrar Envolvidos
   </button>
+  
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
     <a class="dropdown-item" href="cadastropresidente.php">Cadastrar Presidente</a>
     <a class="dropdown-item" href="#">Cadastrar Escrivão</a>
